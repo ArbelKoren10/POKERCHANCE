@@ -1,50 +1,51 @@
 body {
-    background-color: #1b4d3e; /* ירוק פוקר */
+    background-color: #1b4d3e; /* ירוק פוקר עמוק */
+    background-image: url('assets/background.png'); /* אם יש לך את תמונת הרקע */
+    background-size: cover;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    direction: ltr; /* חשוב! מונע מהאתר להתהפך בגלל העברית */
 }
 
 .main-container {
-    max-width: 600px;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
+    padding: 20px;
 }
 
-.card-row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
+/* עיצוב חריצי הקלפים (הריבועים המקווקווים שרואים בצילום) */
 .card-slot {
-    width: 60px;
-    height: 90px;
-    background-color: rgba(255,255,255,0.1);
-    border: 2px dashed #ffffff44;
+    width: 65px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
 }
 
-/* עיצוב המקרא בשני טורים */
+.card-slot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* עיצוב המקרא - שני טורים כפי שביקשת */
+.legend-container {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
 #rankingsContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* חלוקה שווה ל-2 טורים */
-    gap: 20px;
-    background: rgba(0,0,0,0.8);
-    padding: 15px;
-    border-radius: 12px;
-}
-
-.legend-hand-row {
-    display: flex;
-    margin-top: 5px;
-}
-
-.legend-card {
-    width: 30px;
-    height: 45px;
-    margin-left: -10px; /* אפקט החפיפה שביקשת */
-    border-radius: 4px;
+    grid-template-columns: 1fr 1fr; /* שני טורים שווים */
+    gap: 15px;
+    text-align: left;
 }
