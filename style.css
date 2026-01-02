@@ -1,0 +1,50 @@
+body {
+    background-color: #1b4d3e; /* ירוק פוקר */
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card-slot {
+    width: 60px;
+    height: 90px;
+    background-color: rgba(255,255,255,0.1);
+    border: 2px dashed #ffffff44;
+    border-radius: 8px;
+}
+
+/* עיצוב המקרא בשני טורים */
+#rankingsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* חלוקה שווה ל-2 טורים */
+    gap: 20px;
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.legend-hand-row {
+    display: flex;
+    margin-top: 5px;
+}
+
+.legend-card {
+    width: 30px;
+    height: 45px;
+    margin-left: -10px; /* אפקט החפיפה שביקשת */
+    border-radius: 4px;
+}
