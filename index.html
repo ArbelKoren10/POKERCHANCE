@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>מחשבון פוקר - ארבל קורן</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>COMMUNITY BOARD</h1>
+        <div id="boardCardsContainer" class="card-row">
+            <div class="card-slot" id="board1"></div>
+            <div class="card-slot" id="board2"></div>
+            <div class="card-slot" id="board3"></div>
+            <div class="card-slot" id="board4"></div>
+            <div class="card-slot" id="board5"></div>
+        </div>
+
+        <hr>
+
+        <h2>YOUR HAND</h2>
+        <div id="playerCardsContainer" class="card-row">
+            <div class="card-slot" id="hand1"></div>
+            <div class="card-slot" id="hand2"></div>
+        </div>
+
+        <div id="resultText">Select Flop...</div>
+        <button id="btnShuffle">RESET DECK</button>
+
+        <div id="handRankingsCard" class="legend-container">
+            <h3>POKER HAND RANKINGS</h3>
+            <div id="rankingsContainer">
+                <div class="column" id="leftCol"></div>
+                <div class="column" id="rightCol"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
